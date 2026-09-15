@@ -61,7 +61,7 @@ sequenceDiagram
             Ops->>Data: WRITE new balance
             Ops-->>User: Display new balance
         else Insufficient funds
-            Ops-->>User: Reject debit; balance unchanged
+            Ops-->>User: Reject debit and keep balance unchanged
         end
     else Exit
         Main-->>User: Goodbye
